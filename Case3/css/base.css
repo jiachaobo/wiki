@@ -1,0 +1,50 @@
+a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #f3f5f7;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    font-family: 'microsoft yahei';
+}
+
+
+ol, ul {
+    list-style: none;
+}
+img,button {
+    border: 0;
+}
+/*
+em, i, u {
+    font-style: normal;
+}
+*/
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+
+
+/*----------清除浮动-------*/
+			
+.clearfix:after{
+	content: "."; /*内容为. 进来不要空，否则旧浏览器有空隙*/
+	clear: both;  /*清除浮动*/
+	display: block; /*伪元素默认是行内， 转换为块级*/
+	height: 0;
+	visibility: hidden;/*隐藏盒子*/
+}
+.clearfix{
+	*zoom: 1;/*兼容IE6 7*/
+}
